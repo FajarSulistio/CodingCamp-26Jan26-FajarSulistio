@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="main-header p-[8px] flex justify-between items-center">
+
+        <div class="logo"></div>
+
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home">home</a>
+            <a class="border rounded p-2" href="#home">my profile</a>
+            <a class="border rounded p-2" href="#portofolio">portofolio</a>
+            <a class="border rounded p-2" href="#massage-us">massage us</a>
+        </nav>
+    </header> 
+    <hr>
+    <!--welcome-->
+    <main id="home" class="h-[400px] p-10">
+        <div class="welcome-speech">
+               <h1 id="welcome" class="text-2xl font-bold">HI GUEST, WELCOME TO MY WEBSITE</h1>
+               <p>Every expert was once a beginner — this is my starting point.</p>
+        </div>
+    </main>
+    <hr class="my-auto">
+
+
+
+
+
+    <section id="profile" class="p-10">
+
+  <h1 class="text-2xl font-bold mb-6">My Profile</h1>
+
+  <!-- Photo Banner -->
+  <div class="h-[250px] md:h-[350px] bg-cover bg-center rounded mb-6"
+    style="background-image: url('https://b1853550.smushcdn.com/1853550/wp-content/uploads/2024/01/florian-olivo-4hbJ-eymZ1o-unsplash.jpg?lossy=1&strip=1&webp=1&size=1710x0');">
+  </div>
+
+  <!-- About Me -->
+  <div class="mb-6">
+    <h2 class="font-bold text-xl mb-2">About Me</h2>
+    <p>
+      Hello! My name is Fajar. I am an Information Systems student who is passionate about
+      web development. I enjoy learning new technologies and building creative projects.
+      My goal is to become a professional developer in the future.
+    </p>
+  </div>
+
+  <!-- Goals -->
+  <div class="mb-6">
+    <h2 class="font-bold text-xl mb-2">My Goals</h2>
+    <ul class="list-disc ml-5 space-y-2">
+      <li>Work in the tech industry</li>
+      <li>Build useful web applications</li>
+      <li>Make a lot money</li>
+    </ul>
+  </div>
+
+
+</section>
+
+<hr>
+    
+  <!--my porto-->
+   <section id="portofolio" class="p-10">
+            <h1 id="our" class="font-bold text-2xl mb-8">my portofolio</h1>
+
+        <div class="flex justify-center gap-25 text-center ">
+        <!--1-->
+        <div>
+        <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
+            <img src="Salinan FAREWELL DESIGN GRAPHIC.png" alt=""
+            class="w-full h-full rounded-full aspect-square object-cover">
+        </div>
+          <p class="mt-2 font-semibold">internship dg</p>
+        </div>
+
+        <!--2-->
+        <div>
+       <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
+            <img src="https://mangadex.org/covers/2f86d068-de32-4413-9a10-943f454a3efd/ae9d07aa-82d8-413a-9f3c-4e4068a03309.jpg.512.jpg" alt=""
+            class="w-full h-full rounded-full aspect-square object-cover">
+        </div>
+            <p class="mt-2 font-semibold">Jakarta</p>
+        </div>
+        <!--3-->
+        <div>
+        <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
+
+            <img src="https://mangadex.org/covers/2f86d068-de32-4413-9a10-943f454a3efd/ae9d07aa-82d8-413a-9f3c-4e4068a03309.jpg.512.jpg" alt=""
+            class="w-full h-full rounded-full aspect-square object-cover">
+        </div>
+        <p class="mt-2 font-semibold">Jakarta</p>
+        </div>
+</div>
+   </section>
+<hr>
+<!--massage us -->
+<section id="massage-us" class="p-10">
+  <h2 class="font-bold text-2xl mb-6">Message Us</h2>
+
+  <div class="grid grid-cols-2 gap-10">
+
+    <!-- Form -->
+    <form id="massage" class="space-y-4">
+
+      <div>
+        <label class="block text-sm">Nama</label>
+        <input id="input-nama" type="text" class="w-full border p-2 rounded" required>
+      </div>
+
+      <div>
+        <label class="block text-sm">Tanggal Lahir</label>
+        <input id="input-tgl" type="date" class="w-full border p-2 rounded" required>
+      </div>
+
+      <div>
+        <label class="block text-sm">Jenis Kelamin</label>
+        <div class="flex gap-4 text-sm mt-1">
+          <label><input type="radio" name="JK" value="Laki-Laki" required> Laki-Laki</label>
+          <label><input type="radio" name="JK" value="perempuan"> Perempuan</label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm">Pesan</label>
+        <textarea id="input-pesan" class="w-full border p-2 rounded" required></textarea>
+      </div>
+
+      <button class="submit border px-4 py-2 rounded bg-gray-200 hover:bg-gray-300">
+        Submit
+      </button>
+
+    </form>
+
+    <!-- Output Box -->
+   <div class="border p-4 rounded text-sm">
+  <p id="currentTime">Current time : -</p>
+  <p id="Nama">Nama : -</p>
+  <p id="Tanggal">Tanggal Lahir : -</p>
+  <p id="JK">Jenis Kelamin : -</p>
+  <p id="Pesan">Pesan : -</p>
+</div>
+
+  </div>
+</section>
+
+
+
+
+
+<hr>
+   <footer class="text-center py-4 text-gray-500">
+  Created by Fajar
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
