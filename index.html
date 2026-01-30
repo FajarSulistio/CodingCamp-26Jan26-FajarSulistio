@@ -14,7 +14,7 @@
 
         <div class="logo"></div>
 
-        <nav class="flex">
+        <nav class="flex flex-wrap gap-2 text-sm md:text-base">
             <a class="border rounded p-2" href="#home">home</a>
             <a class="border rounded p-2" href="#home">my profile</a>
             <a class="border rounded p-2" href="#portofolio">portofolio</a>
@@ -23,7 +23,7 @@
     </header> 
     <hr>
     <!--welcome-->
-    <main id="home" class="h-[400px] p-10">
+    <main id="home" class="h-[250px] md:h-[400px] p-6 md:p-10">
         <div class="welcome-speech">
                <h1 id="welcome" class="text-2xl font-bold">HI GUEST, WELCOME TO MY WEBSITE</h1>
                <p>Every expert was once a beginner — this is my starting point.</p>
@@ -35,12 +35,12 @@
 
 
 
-    <section id="profile" class="p-10">
+    <section id="profile" class="p-6 md:p-10">
 
   <h1 class="text-2xl font-bold mb-6">My Profile</h1>
 
   <!-- Photo Banner -->
-  <div class="h-[250px] md:h-[350px] bg-cover bg-center rounded mb-6"
+  <div class="h-[180px] md:h-[300px] bg-cover bg-center rounded mb-6"
     style="background-image: url('https://b1853550.smushcdn.com/1853550/wp-content/uploads/2024/01/florian-olivo-4hbJ-eymZ1o-unsplash.jpg?lossy=1&strip=1&webp=1&size=1710x0');">
   </div>
 
@@ -70,10 +70,10 @@
 <hr>
     
   <!--my porto-->
-   <section id="portofolio" class="p-10">
+   <section id="portofolio" class="p-6 md:p-10">
             <h1 id="our" class="font-bold text-2xl mb-8">my portofolio</h1>
 
-        <div class="flex justify-center gap-25 text-center ">
+        <div class="flex flex-col md:flex-row justify-center gap-10 text-center ">
         <!--1-->
         <div>
         <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
@@ -104,10 +104,10 @@
    </section>
 <hr>
 <!--massage us -->
-<section id="massage-us" class="p-10">
+<section id="massage-us" class="p-6 md:p-10">
   <h2 class="font-bold text-2xl mb-6">Message Us</h2>
 
-  <div class="grid grid-cols-2 gap-10">
+  <div class="grid grid-cols-1 md:grid-cols-2">
 
     <!-- Form -->
     <form id="massage" class="space-y-4">
