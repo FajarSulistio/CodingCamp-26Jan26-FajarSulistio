@@ -9,21 +9,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body >
-    <header class="main-header p-[8px] flex justify-between items-center">
+<body  class="bg-gray-50 text-gray-800">
+<header class="p-4 flex justify-between items-center shadow-sm bg-white sticky top-0 z-50 backdrop-blur-md">
 
-        <div class="logo"></div>
 
-        <nav class="flex flex-wrap gap-2 text-sm md:text-base">
-            <a class="border rounded p-2" href="#home">home</a>
-            <a class="border rounded p-2" href="#profile">my profile</a>
-            <a class="border rounded p-2" href="#portofolio">portofolio</a>
-            <a class="border rounded p-2" href="#massage-us">massage us</a>
-        </nav>
-    </header> 
-    <hr>
+  <div class="logo"></div>
+
+  <nav class="flex flex-wrap gap-4 text-sm md:text-base font-medium">
+    <a href="#home" class="hover:text-blue-500 transition">Home</a>
+    <a href="#profile" class="hover:text-blue-500 transition">My Profile</a>
+    <a href="#portofolio" class="hover:text-blue-500 transition">Portfolio</a>
+    <a href="#massage-us" class="hover:text-blue-500 transition">Message Us</a>
+  </nav>
+
+</header>
+
     <!--welcome-->
-    <main id="home" class="h-[250px] md:h-[400px] p-6 md:p-10">
+   <main id="home" class="h-[250px] md:h-[400px] p-6 md:p-10 bg-gradient-to-r from-blue-50 to-purple-50 rounded-b-xl">
+
         <div class="welcome-speech">
                <h1 id="welcome" class="text-2xl font-bold">HI GUEST, WELCOME TO MY WEBSITE</h1>
                <p>Every expert was once a beginner — this is my starting point.</p>
@@ -35,9 +38,10 @@
 
 
 
-    <section id="profile" class="p-6 md:p-10">
+    <section id="profile" class="p-6 md:p-10 bg-white shadow-md rounded-xl mx-4 my-6">
 
-  <h1 class="text-2xl font-bold mb-6">My Profile</h1>
+
+  <h1 class="text-3xl font-extrabold mb-8 text-blue-600 text-center mb-4">MY PROFILE</h1>
 
   <!-- Photo Banner -->
   <div class="h-[180px] md:h-[300px] bg-cover bg-center rounded mb-6"
@@ -70,42 +74,61 @@
 <hr>
     
   <!--my porto-->
-   <section id="portofolio" class="p-6 md:p-10">
-            <h1 id="our" class="font-bold text-2xl mb-8">my portofolio</h1>
+   <section id="portofolio" class="p-6 md:p-10 bg-white shadow-md rounded-xl mx-4 my-6">
+  <h1 class="text-3xl font-extrabold mb-8 text-blue-600 text-center mb-4">MY PORTOFOLIO</h1>
 
-        <div class="flex flex-col md:flex-row justify-center gap-10 text-center ">
-        <!--1-->
-        <div>
-        <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
-            <img src="img/Salinan FAREWELL DESIGN GRAPHIC.png" alt=""
-            class="w-full h-full rounded-full aspect-square object-cover">
-        </div>
-          <p class="mt-2 font-semibold">internship dg</p>
-        </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!--2-->
-        <div>
-       <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
-            <img src="img/Cuplikan layar 2026-01-31 020824.png" alt=""
-            class="w-full h-full rounded-full aspect-square object-cover">
-        </div>
-            <p class="mt-2 font-semibold">projek sederhana web jualan donat</p>
-            <a target="_blank" class="text-blue-500" href="https://fajarsulistio.github.io/JualanDonut/">https://fajarsulistio.github.io/JualanDonut/</a>
-        </div>
-        <!--3-->
-        <div>
-        <div class="w-52 h-52 rounded-full overflow-hidden mx-auto">
+    <!-- Project 1 -->
+    <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition duration-300 overflow-hidden">
+      <img src="img/Salinan FAREWELL DESIGN GRAPHIC.png" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="font-bold text-lg mb-2">Graphic Design Internship</h2>
+        <p class="text-sm text-gray-600 mb-3">
+          DPengalaman magang sebagai Graphic Designer dalam mengerjakan berbagai kebutuhan visual brand.
+        </p>
+        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
+          Design
+        </span>
+      </div>
+    </div>
 
-            <img src="img/Cuplikan layar 2026-01-31 021612.png" alt=""
-            class="w-full h-full rounded-full aspect-square object-cover">
-        </div>
-        <p class="mt-2 font-semibold">projek web portfolio (web ini)</p>
-        </div>
-</div>
-   </section>
+    <!-- Project 2 -->
+    <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition duration-300 overflow-hidden">
+      <img src="img/Cuplikan layar 2026-01-31 020824.png" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="font-bold text-lg mb-2">Website Jualan Donat</h2>
+        <p class="text-sm text-gray-600 mb-3">
+          Website sederhana untuk simulasi penjualan donat menggunakan HTML & tailwind.
+        </p>
+        <a href="https://fajarsulistio.github.io/JualanDonut/" target="_blank"
+           class="text-blue-500 hover:underline text-sm">
+          View Project →
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition duration-300 overflow-hidden">
+      <img src="img/Cuplikan layar 2026-01-31 021612.png" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="font-bold text-lg mb-2">Personal Portfolio Website</h2>
+        <p class="text-sm text-gray-600 mb-3">
+          Website portfolio pribadi dengan Tailwind CSS dan JavaScript interaktif.
+        </p>
+        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">
+          HTML • Tailwind • JS
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <hr>
 <!--massage us -->
-<section id="massage-us" class="p-6 md:p-10">
+<section id="massage-us" class="p-6 md:p-10 bg-white shadow-md rounded-xl mx-4 my-6">
+
   <h2 class="font-bold text-2xl mb-6">Message Us</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2">
@@ -159,8 +182,8 @@
 
 
 <hr>
-   <footer class="text-center py-4 text-gray-500">
-  Created by Fajar
+   <footer class="py-6 bg-gray-100 text-center text-sm text-gray-600">
+  © 2026 Fajar • Web Developer • Contact: fajar.sulistio@raharja.imfo
 </footer>
 
 

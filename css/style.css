@@ -19,4 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
+section, main {
+  scroll-margin-top: 80px;
+}
 
